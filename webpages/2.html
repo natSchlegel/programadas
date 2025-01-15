@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Livro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+        body {
+            margin: 0;
+            font-family: "EB Garamond", serif;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .header-imagem {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+
+        .titulo {
+            font-size: 50px;
+        }
+
+        .pagina-inicial {}
+
+        .participantes {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .participante-imagem {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            box-shadow: 0 0 0 10px #333;
+        }
+
+        .livros{
+            font-size: medium;
+        }
+
+        .imagem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .imagem span{
+            text-align: center;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="header-imagem"
+            src="https://s2.glbimg.com/nIqfLY3zjr8JntK_zMS9QxXFaZk=/e.glbimg.com/og/ed/f/original/2020/09/05/alfons-morales-ylswjsy7stw-unsplash.jpg"
+            alt="Header Image">
+        <span class="titulo">Clube do Livro</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#pagina-inicial">Página Inicial</a></li>
+            <li><a href="#participantes">Participantes</a></li>
+            <li><a href="#livros">Livros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="pagina-inicial">O Clube do Livro é um grupo feito pra quem ama ler e compartilhar histórias. A ideia é
+            bem simples: a gente escolhe um livro pra ler e depois se reúne pra conversar sobre ele. Todo mundo pode dar
+            sua opinião, falar do que gostou ou não e também trocar ideias com os outros. Além disso, dá pra levar
+            livros que você já leu e trocar por outros com os participantes. É uma forma divertida de descobrir novas
+            histórias, fazer amigos e aprender mais com a leitura!</div>
+        <div id="participantes"></div>
+
+        <div id="participantes" class="participantes">
+
+            <div class="imagem"><img src="https://cdn.picrew.me/shareImg/org/202501/644129_3MeYNnVM.png" class="participante-imagem"><span>Ana Vitória</span></div>
+            <div class="imagem"><img src="https://cdn.picrew.me/shareImg/org/202501/644129_5VZdHqGg.png" class="participante-imagem"><span>Maria Eduarda</span></div>
+        </div>
+
+        <div id="livros" class="livros">
+            <h3>Esses são os livros que a gente tá discutindo! Se quiser participar do grupo, manda um email para: ana.vitorias2@gmail.com</h3>
+            <ul>
+                <li> A Culpa é das Estrelas - John Green</li>
+                <li> A Seleção - Kiera Cass</li>
+                <li> Jogos Vorazes - Suzanne Collins</li>
+                <li> Os Instrumentos Mortais - Cassandra Clare</li>
+                <li> As Aventuras de Alice no País das Maravilhas - Lewis Carroll</li>
+            </ul>
+
+    </main>
+    <footer>
+        <p>Site desenvolvido por Ana Vitória e Maria Eduarda</p>
+    </footer>
+</body>
+
+</html>
